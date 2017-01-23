@@ -132,6 +132,7 @@ void hexdump(unsigned char* buf, int size)
 
 int find_host(unsigned char* buf, int size)
 {
+      isnaver=0;
       u_char ip;
       ip=(u_char)(*buf);
       int size_ip=IP_HL(ip)*4;
